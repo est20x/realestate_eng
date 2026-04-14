@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function LeadForm() {
   return (
     <div className="self-stretch xl:flex xl:justify-center 2xl:justify-start 2xl:flex 2xl:w-full 2xl:max-w-none 2xl:h-full">
-      {/* Мобільна версія wrapper - px-5 замість mx-5 */}
+      {/* Mobile version wrapper */}
       <div className="xl:hidden w-full px-5 pb-0">
         <div
           className="flex flex-col items-start w-full h-75 bg-(--color-blue-light) relative pt-2 mb-16.75 rounded-[10px] overflow-hidden shadow-[0px_4px_8px_0px_#0000001A]"
@@ -14,7 +14,7 @@ export default function LeadForm() {
             backgroundPosition: "center",
           }}
         >
-          {/* Градієнт overlay - тільки мобілка */}
+          {/* Gradient overlay - mobile only */}
           <div
             className="absolute inset-0 z-1"
             style={{
@@ -25,7 +25,7 @@ export default function LeadForm() {
             }}
           ></div>
 
-          {/* Ліва частина - текст, стрілка, кнопка */}
+          {/* Left part - text, arrow, button */}
           <div
             className="flex flex-col items-start self-stretch bg-cover bg-center py-3.25 pr-5 rounded-[10px] relative z-10"
             style={{
@@ -33,7 +33,7 @@ export default function LeadForm() {
             }}
           >
             <span className="text-base leading-[100%] mb-1.25 ml-5 font-normal text-white max-w-[calc(100%-20px)] h-4.75">
-              Получить подборку квартир
+              Get a selection of apartments
             </span>
             <div className="flex items-center w-fit h-7.5 py-1 px-1.5 mb-3.5 ml-5 gap-2 rounded-[3.91px] bg-[#FFFFFF40]">
               <div className="flex items-center justify-center shrink-0 relative w-5 h-5">
@@ -43,7 +43,7 @@ export default function LeadForm() {
                 <div className="w-5 h-5 absolute top-0 left-0 rounded-full border-[0.88px] border-solid bg-white border-(--color-blue-primary)"></div>
               </div>
               <span className="text-base font-semibold leading-[100%] text-white">
-                расчёт доходности
+                yield calculation
               </span>
             </div>
             <Image
@@ -63,14 +63,14 @@ export default function LeadForm() {
               }}
             >
               <span className="text-xl font-extrabold text-(--color-yellow-dark)">
-                Получить подборку
+                Get a selection
               </span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Десктопна версія */}
+      {/* Desktop version */}
       <div
         className="hidden xl:flex flex-row items-start 2xl:items-center w-[679px] 2xl:w-full h-[187px] 2xl:h-full relative shadow-[0px_4px_8px_0px_#0000001A]"
         style={{
@@ -79,7 +79,7 @@ export default function LeadForm() {
           overflow: "hidden",
         }}
       >
-        {/* Wrapper для фонів з overflow hidden */}
+        {/* Background wrapper with overflow hidden */}
         <div
           className="absolute inset-0"
           style={{
@@ -87,7 +87,7 @@ export default function LeadForm() {
             borderRadius: "20px",
           }}
         >
-          {/* Фон з хмарами - нижній шар */}
+          {/* Cloud background - bottom layer */}
           <div
             className="absolute top-0 right-0 h-full w-[400px] 2xl:w-[400px] z-0 pointer-events-none"
             style={{
@@ -106,7 +106,7 @@ export default function LeadForm() {
             />
           </div>
 
-          {/* Фон з пагорбом - верхній шар */}
+          {/* Hill background - top layer */}
           <div
             className="absolute top-0 right-0 h-full w-[400px] 2xl:w-[400px] z-1 pointer-events-none"
             style={{
@@ -126,15 +126,15 @@ export default function LeadForm() {
           </div>
         </div>
 
-        {/* Лівий блок - контент з прозорим фоном */}
+        {/* Left block - content with transparent background */}
         <div className="flex flex-row items-start justify-start h-full py-4 2xl:py-4 pr-4 2xl:pr-4 pl-6 2xl:pl-6 relative z-10 pointer-events-auto">
-          {/* Текстовий блок */}
+          {/* Text block */}
           <div className="flex flex-col items-start 2xl:mt-0">
             <span
               className="text-[20px] 2xl:text-[20px] leading-[100%] font-normal text-white mb-1.5 2xl:mb-1.5"
               style={{ fontFamily: "Gilroy" }}
             >
-              Получить подборку квартир
+              Get a selection of apartments
             </span>
             <div className="flex items-center py-0.5 2xl:py-0.5 px-1.5 2xl:px-1.5 mb-8 2xl:mb-8 gap-1.5 2xl:gap-1.5 rounded-[3.91px] 2xl:rounded-[3.91px] bg-[#FFFFFF40]">
               <div className="flex items-center justify-center shrink-0 relative w-4 2xl:w-4 h-4 2xl:h-4">
@@ -147,7 +147,7 @@ export default function LeadForm() {
                 className="text-[20px] 2xl:text-[20px] font-semibold leading-[100%] text-white"
                 style={{ fontFamily: "Gilroy" }}
               >
-                расчёт доходности
+                yield calculation
               </span>
             </div>
             <a
@@ -159,12 +159,12 @@ export default function LeadForm() {
               }}
             >
               <span className="text-lg 2xl:text-lg font-extrabold text-(--color-yellow-dark)">
-                Получить подборку
+                Get a selection
               </span>
             </a>
           </div>
 
-          {/* Стрілка */}
+          {/* Arrow */}
           <Image
             src="/Vector 1-desktop.webp"
             width={29}
