@@ -11,8 +11,8 @@ export default function Benefits() {
             <Emoji>⏳</Emoji>
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-3">
-            Рассрочка:{" "}
-            <span className="font-bold">30% первый взнос + 30 месяцев</span>
+            Installment:{" "}
+            <span className="font-bold">30% down payment + 30 months</span>
           </span>
         </div>
 
@@ -21,7 +21,7 @@ export default function Benefits() {
             <Emoji>📄</Emoji>
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-4">
-            <span className="font-bold">Лицензия</span> на краткосрочную аренду
+            <span className="font-bold">License</span> for short-term rental
           </span>
         </div>
 
@@ -31,9 +31,9 @@ export default function Benefits() {
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-4">
             <span className="font-bold whitespace-nowrap">
-              Первая береговая
+              Prime beachfront
             </span>{" "}
-            <span className="font-bold">линия</span> (премиум-сегмент)
+            <span className="font-bold">location</span> (premium segment)
           </span>
         </div>
 
@@ -42,8 +42,7 @@ export default function Benefits() {
             <Emoji>🔥</Emoji>
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-3">
-            <span className="font-bold">Высокий спрос</span> на аренду круглый
-            год
+            <span className="font-bold">High rental demand</span> year-round
           </span>
         </div>
 
@@ -52,7 +51,7 @@ export default function Benefits() {
             <Emoji>💰</Emoji>
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-4">
-            Пассивный доход <span className="font-bold">до $20,000 в год</span>
+            Passive income <span className="font-bold">up to $20,000 per year</span>
           </span>
         </div>
 
@@ -61,7 +60,7 @@ export default function Benefits() {
             <Emoji>💶</Emoji>
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-4">
-            Цены от <br className="md:hidden" /><span className="font-bold">€240,000</span>
+            Prices from <br className="md:hidden" /><span className="font-bold">€240,000</span>
           </span>
         </div>
 
@@ -70,8 +69,7 @@ export default function Benefits() {
             <Emoji>🚀</Emoji>
           </span>
           <span className="text-sm md:text-base lg:text-lg ml-5 md:ml-6 lg:ml-8 font-light text-(--color-blue-primary) -mt-2">
-            <span className="font-bold">Рост стоимости</span> на этапе
-            строительства
+            <span className="font-bold">Value growth</span> during construction
           </span>
         </div>
       </div>
@@ -79,7 +77,7 @@ export default function Benefits() {
       <div className="px-5 md:px-8 lg:px-12 xl:px-16 mt-3 md:mt-4 lg:mt-6 mb-17.75 md:mb-20 lg:mb-24">
         <a href="#contact-form" className="flex flex-col items-center justify-center text-left py-5.25 md:py-6 lg:py-7 rounded-[10px] md:rounded-[12px] border-0 bg-[linear-gradient(90deg,#FFE643_0%,#FFEE7D_51.92%,#FFE643_100%)] w-full h-[60.99px] md:h-[70px] lg:h-[80px] cursor-pointer no-underline">
           <span className="text-[#453D0B] text-lg md:text-xl lg:text-2xl font-extrabold">
-            Получить расчёт доходности
+            Get a yield calculation
           </span>
         </a>
       </div>
