@@ -30,24 +30,24 @@ const gilroy = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Недвижимость в Алании | Квартиры на первой линии с видом на море",
+  title: "Real Estate in Alanya | Beachfront Apartments with Sea Views",
   description:
-    "Станьте владельцем недвижимости у моря в Алании, Турция. Рассрочка на 30 месяцев, первый взнос 30%. Пассивный доход до $20,000 в год. От застройщика с 40-летним опытом.",
+    "Become an owner of seafront property in Alanya, Turkey. Installment plan for 30 months, 30% down payment. Passive income up to $20,000 per year. From a developer with 40 years of experience.",
   keywords:
-    "недвижимость Алания, квартиры в Турции, недвижимость у моря, квартиры в рассрочку, инвестиции в недвижимость",
+    "real estate Alanya, apartments in Turkey, seafront property, installment apartments, real estate investment",
   openGraph: {
-    title: "Недвижимость в Алании | Квартиры на первой линии с видом на море",
+    title: "Real Estate in Alanya | Beachfront Apartments with Sea Views",
     description:
-      "Станьте владельцем недвижимости у моря в Алании. Рассрочка на 30 месяцев, доход до $20,000 в год.",
+      "Become an owner of seafront property in Alanya. Installment for 30 months, income up to $20,000 per year.",
     type: "website",
-    locale: "ru_RU",
-    siteName: "Недвижимость в Алании",
+    locale: "en_US",
+    siteName: "Real Estate in Alanya",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Недвижимость в Алании | Квартиры на первой линии",
+    title: "Real Estate in Alanya | Beachfront Apartments",
     description:
-      "Станьте владельцем недвижимости у моря в Алании. Рассрочка на 30 месяцев.",
+      "Become an owner of seafront property in Alanya. Installment plan for 30 months.",
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={`${gilroy.variable} h-full antialiased`}>
+    <html lang="en" className={`${gilroy.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col m-0 p-0">{children}</body>
     </html>
   );
