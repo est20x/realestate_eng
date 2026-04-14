@@ -37,16 +37,16 @@ export class ErrorBoundary extends Component<Props, State> {
           <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8 text-center">
             <div className="text-6xl mb-4">⚠️</div>
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
-              Что-то пошло не так
+              Something went wrong
             </h1>
             <p className="text-gray-600 mb-6">
-              Произошла ошибка при загрузке страницы. Пожалуйста, попробуйте обновить страницу.
+              An error occurred while loading the page. Please try refreshing.
             </p>
             <button
               onClick={() => window.location.reload()}
               className="bg-[#36A3E5] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#2a8bc9] transition-colors"
             >
-              Обновить страницу
+              Refresh page
             </button>
           </div>
         </div>
