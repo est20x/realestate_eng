@@ -36,11 +36,11 @@ export default function FormFields({
   return (
     <>
       <input
-        placeholder="Введите ваше имя"
+        placeholder="Enter your name"
         value={name}
         onChange={(e) => onNameChange(e.target.value)}
         className={inputClasses}
-        aria-label="Ваше имя"
+        aria-label="Your name"
         required
       />
       <PhoneInput
@@ -52,7 +52,7 @@ export default function FormFields({
         containerClass={phoneContainerClass}
         dropdownClass="!bg-white !text-black !z-[9999]"
         inputProps={{
-          'aria-label': 'Номер телефона',
+          'aria-label': 'Phone number',
           'required': true
         }}
       />
