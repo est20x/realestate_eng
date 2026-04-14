@@ -37,7 +37,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     if (!name || !phone) {
-      toast.error("Пожалуйста, заполните все поля");
+      toast.error("Please fill in all fields");
       return;
     }
 
@@ -61,15 +61,15 @@ export default function ContactForm() {
         setSubmitStatus("success");
         setName("");
         setPhone("");
-        toast.success("Успех! Ваша заявка отправлена.");
+        toast.success("Success! Your request has been submitted.");
       } else {
         setSubmitStatus("error");
-        toast.error("Ошибка отправки. Попробуйте еще раз.");
+        toast.error("Submission failed. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
       setSubmitStatus("error");
-      toast.error("Ошибка отправки. Попробуйте еще раз.");
+      toast.error("Submission failed. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -78,7 +78,7 @@ export default function ContactForm() {
   return (
     <div id="contact-form" className="self-stretch">
       <Toaster position="top-center" reverseOrder={false} />
-      {/* Мобільна версія */}
+      {/* Mobile version */}
       <div
         className="xl:hidden self-stretch bg-[url('/fantastic-seascape-with-ripples-depositphotos-bgremover%201.webp')] bg-cover py-[74px] md:py-20 lg:py-24 px-5 md:px-8 lg:px-12"
         style={{ backgroundPosition: "calc(50% + 5px) center" }}
@@ -86,31 +86,31 @@ export default function ContactForm() {
         <div className="flex flex-col self-stretch md:max-w-[600px] lg:max-w-[700px] md:mx-auto py-7 md:py-10 lg:py-12 px-5 md:px-8 lg:px-10 rounded-[15px] md:rounded-[20px] bg-[#011b2ae6]">
           <div className="flex flex-col items-start self-stretch pb-[21px] md:pb-6 lg:pb-8 relative">
             <span className="text-white text-[26px] md:text-3xl lg:text-4xl font-bold uppercase leading-[115%]">
-              <span>Станьте владельцем</span>
+              <span>Become an owner</span>
               <br />
               <span className="text-[color:var(--color-blue-highlight)]">
-                недвижимости
+                of property
               </span>
               <br />
-              <span className="text-[color:var(--color-blue-highlight)]">у моря</span>
+              <span className="text-[color:var(--color-blue-highlight)]">by the sea</span>
             </span>
             <Image
               src="/image 7 2.webp"
-              alt="Вид на море з балкону"
+              alt="Sea view from balcony"
               width={89}
               height={121}
               className="w-[89px] md:w-[100px] lg:w-[110px] h-[121px] md:h-[136px] lg:h-[150px] rounded-[15px] object-fill absolute bottom-0 right-0"
             />
             <span className="text-white text-base md:text-lg lg:text-xl font-light mt-2 max-w-[calc(100%-100px)]">
-              <span className="whitespace-nowrap">от компании застройщиков</span>{" "}
-              <span className="font-bold whitespace-nowrap">с 40-летним опытом</span>
+              <span className="whitespace-nowrap">from a developer</span>{" "}
+              <span className="font-bold whitespace-nowrap">with 40 years of experience</span>
             </span>
           </div>
           <div className="flex flex-col items-start self-stretch bg-[#ffffff08] backdrop-blur-[2px] py-3 md:py-4 lg:py-5 pl-[19px] md:pl-6 lg:pl-8 pr-[19px] md:pr-6 lg:pr-8 mb-[30px] md:mb-8 lg:mb-10 rounded-[10px] md:rounded-[12px] border border-[#ffffff20] shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] relative overflow-hidden">
             <div className="absolute inset-0 backdrop-blur-[8px] [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black_100%)] pointer-events-none"></div>
             <div className="relative z-10 flex flex-col items-start self-stretch">
               <span className="text-white text-[17px] md:text-xl lg:text-2xl font-extrabold mb-[18px] md:mb-5 lg:mb-6">
-                Оставьте заявку и получите:
+                Submit a request and receive:
               </span>
               <div className="flex flex-col w-full">
                 <div className="flex items-start gap-2 mb-3">
@@ -128,8 +128,8 @@ export default function ContactForm() {
                     />
                   </svg>
                   <span className="text-white text-[13px] font-light ">
-                    подборку квартир{" "}
-                    <span className="font-bold">под ваш бюджет</span>
+                    a selection of apartments{" "}
+                    <span className="font-bold">within your budget</span>
                   </span>
                 </div>
 
@@ -151,7 +151,7 @@ export default function ContactForm() {
                       />
                     </svg>
                     <span className="text-white text-[13px] font-light">
-                      <span className="font-bold">расчёт</span> доходности
+                      <span className="font-bold">yield</span> calculation
                     </span>
                   </div>
 
@@ -172,7 +172,7 @@ export default function ContactForm() {
                       />
                     </svg>
                     <span className="text-white text-[13px] font-light">
-                      <span className="font-bold">актуальные</span> цены
+                      <span className="font-bold">current</span> prices
                     </span>
                   </div>
                 </div>
@@ -181,11 +181,11 @@ export default function ContactForm() {
           </div>
           <form onSubmit={handleSubmit}>
             <input
-              placeholder="Введите ваше имя"
+              placeholder="Enter your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="w-full h-[50px] md:h-[55px] lg:h-[60px] px-5 md:px-6 lg:px-7 mb-3 md:mb-4 lg:mb-5 rounded-[10px] md:rounded-[12px] bg-white text-black text-base md:text-lg lg:text-xl focus:outline-none placeholder:text-gray-400"
-              aria-label="Ваше имя"
+              aria-label="Your name"
               required
             />
             <div className="flex w-full gap-3 md:gap-4 lg:gap-5 mb-[30px] md:mb-8 lg:mb-10 h-[50px] md:h-[55px] lg:h-[60px] relative z-[100]">
@@ -199,14 +199,14 @@ export default function ContactForm() {
                 containerClass="!w-full !h-full"
                 dropdownClass="!bg-white !text-black"
                 inputProps={{
-                  'aria-label': 'Номер телефона',
+                  'aria-label': 'Phone number',
                   'required': true
                 }}
               />
             </div>
             <div className="flex flex-col items-start self-stretch mb-[18px] md:mb-5 lg:mb-6 gap-[7px] md:gap-2.5 lg:gap-3 relative z-10">
               <span className="text-white text-lg md:text-xl lg:text-2xl font-semiboldbold ">
-                Как с вами связаться:
+                How to contact you:
               </span>
               <div className="flex items-center self-stretch gap-0 rounded-md md:rounded-lg bg-[#FFFFFF1A] overflow-hidden">
                 <AnimatedButton
@@ -249,14 +249,14 @@ export default function ContactForm() {
               className="w-full flex flex-col items-center self-stretch py-[17px] rounded-[10px] md:rounded-[12px] border-0 bg-[linear-gradient(90deg,#FFE643_0%,#FFEE7D_51.92%,#FFE643_100%)] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span className="text-[17px] md:text-xl lg:text-2xl font-bold leading-[100%] text-center text-[#453E0C]">
-                {isSubmitting ? "Отправка..." : "Получить подборку"}
+                {isSubmitting ? "Sending..." : "Get a selection"}
               </span>
             </button>
           </form>
         </div>
       </div>
 
-      {/* Десктопна та Планшетна версія (md, lg, xl) */}
+      {/* Desktop & Tablet version (md, lg, xl) */}
       <div
         className="hidden xl:flex flex-col items-center self-stretch bg-[url('/fantastic-seascape-with-ripples-depositphotos-bgremover%201.webp')] bg-cover py-12 lg:py-16 xl:py-24 2xl:py-19 px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-13 relative"
         style={{ backgroundPosition: "50% 80%" }}
@@ -268,14 +268,14 @@ export default function ContactForm() {
           <div className="flex-1 flex flex-col justify-between p-8 md:p-8 lg:p-12 xl:p-20 2xl:p-16 xl:pr-10 2xl:pr-8">
             <div className="mb-8 md:mb-10 xl:mb-0">
               <h2 className="text-white text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] 2xl:text-[38px] font-bold leading-[110%] uppercase mb-4 md:mb-6 2xl:mb-5 max-w-[550px] 2xl:max-w-[440px]">
-                Станьте владельцем <br />
-                <span className="text-[#82D3FF]">недвижимости</span> <br />
-                <span className="text-[#82D3FF]">у моря</span>
+                Become an owner <br />
+                <span className="text-[#82D3FF]">of property</span> <br />
+                <span className="text-[#82D3FF]">by the sea</span>
               </h2>
               <p className="text-white text-[16px] md:text-[18px] xl:text-[20px] 2xl:text-[20px] font-light max-w-[500px] 2xl:max-w-[400px] 2xl:pb-4 xl:pb-4">
-                от компании застройщиков{" "}
+                from a developer{" "}
                 <br className="hidden 2xl:block xl:block" />
-                <span className="font-bold">с 40-летним опытом</span>
+                <span className="font-bold">with 40 years of experience</span>
               </p>
             </div>
 
@@ -285,7 +285,7 @@ export default function ContactForm() {
               <div className="absolute bottom-full right-[0%] z-20">
                 <Image
                   src="/башня-desktop.webp"
-                  alt="Башня в Алании"
+                  alt="Tower in Alanya"
                   width={250}
                   height={370}
                   className="w-[clamp(90px,13vw,165px)] 2xl:w-[132px] h-auto object-contain object-bottom translate-y-[2px]"
@@ -296,18 +296,18 @@ export default function ContactForm() {
               <div className="bg-[#ffffff08] backdrop-blur-[2px] border border-[#ffffff20] rounded-[20px] 2xl:rounded-[16px] p-6 lg:p-8 2xl:p-6 flex flex-col gap-4 lg:gap-6 2xl:gap-5 relative z-10 overflow-hidden">
                 <div className="absolute inset-0 backdrop-blur-[8px] [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black_100%)] pointer-events-none"></div>
                 <span className="text-white text-[18px] lg:text-[22px] 2xl:text-[18px] font-bold relative z-10 ml-0 inline-block">
-                  Оставьте заявку и получите:
+                  Submit a request and receive:
                 </span>
                 <div className="flex flex-row items-stretch justify-center gap-2 md:gap-4 lg:gap-6 2xl:gap-10 relative z-10 w-full">
-                  <IconPoint text="цены" boldText="актуальные" boldFirst={true} />
+                  <IconPoint text="prices" boldText="current" boldFirst={true} />
                   <div className="w-[1px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#FFFFFF_50%,rgba(255,255,255,0)_100%)] opacity-40"></div>
                   <IconPoint
-                    text="подборку квартир"
-                    boldText="под ваш бюджет"
+                    text="apartment selection"
+                    boldText="within your budget"
                     boldFirst={false}
                   />
                   <div className="w-[1px] bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,#FFFFFF_50%,rgba(255,255,255,0)_100%)] opacity-40"></div>
-                  <IconPoint text="доходности" boldText="расчёт" boldFirst={true} />
+                  <IconPoint text="calculation" boldText="yield" boldFirst={true} />
                 </div>
               </div>
             </div>
@@ -321,11 +321,11 @@ export default function ContactForm() {
 
                 <div className="flex flex-col gap-4 2xl:gap-3 relative z-30">
                   <input
-                    placeholder="Введите ваше имя"
+                    placeholder="Enter your name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="w-full h-14 2xl:h-11 px-6 2xl:px-5 rounded-[12px] 2xl:rounded-[10px] bg-white text-black text-[18px] 2xl:text-[14px] focus:outline-none placeholder:text-gray-400"
-                    aria-label="Ваше имя"
+                    aria-label="Your name"
                     required
                   />
                   <PhoneInput
@@ -337,7 +337,7 @@ export default function ContactForm() {
                     containerClass="!w-full !h-14 2xl:!h-11"
                     dropdownClass="!bg-white !text-black !z-[9999]"
                     inputProps={{
-                      'aria-label': 'Номер телефона',
+                      'aria-label': 'Phone number',
                       'required': true
                     }}
                   />
@@ -345,7 +345,7 @@ export default function ContactForm() {
 
                 <div className="flex flex-col gap-4 2xl:gap-3 relative z-10 w-full mb-2 2xl:mb-1">
                   <span className="text-white text-[18px] 2xl:text-[14px] font-bold">
-                    Как с вами связаться:
+                    How to contact you:
                   </span>
                   <div className="flex items-stretch self-stretch rounded-xl 2xl:rounded-[10px] border-x-[1px] border-y-[1px] border-[#ffffff40] bg-[#FFFFFF0A] overflow-hidden">
                     <AnimatedButton
@@ -389,7 +389,7 @@ export default function ContactForm() {
                   className="w-full h-16 2xl:h-13 bg-[linear-gradient(90deg,#FFE643_0%,#FFEE7D_51.92%,#FFE643_100%)] rounded-[15px] 2xl:rounded-[12px] border-0 shadow-lg cursor-pointer hover:brightness-105 active:scale-[0.98] transition-all relative z-10 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                 >
                   <span className="text-[#453E0C] text-[20px] 2xl:text-[16px] font-bold whitespace-nowrap">
-                    {isSubmitting ? "Отправка..." : "Получить подборку"}
+                    {isSubmitting ? "Sending..." : "Get a selection"}
                   </span>
                 </button>
               </div>
