@@ -9,11 +9,11 @@ export default function Lifestyle() {
       className="self-stretch"
       style={{ backgroundColor: "var(--color-blue-accent)" }}
     >
-      {/* Мобільна версія */}
+      {/* Mobile version */}
       <div className="md:hidden flex flex-col items-center self-stretch bg-[url(/paradiseLifeBG.webp)] bg-cover bg-center py-18.75 px-5">
         <span className="text-white text-[26px] font-semibold text-center w-full max-w-[280px] mb-4.75 uppercase leading-[100%]">
-          <span className="whitespace-nowrap">Райская жизнь у</span>{" "}
-          <span className="whitespace-nowrap">моря круглый год</span>
+          <span className="whitespace-nowrap">Paradise life by</span>{" "}
+          <span className="whitespace-nowrap">the sea all year round</span>
         </span>
         <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 self-stretch gap-5.25 md:gap-6 lg:gap-8">
           <div className="flex flex-col w-full bg-white py-6.5 md:py-8 lg:py-10 px-6.5 md:px-8 lg:px-10 gap-2.25 md:gap-3 lg:gap-4 rounded-[13px] md:rounded-[15px]">
@@ -37,8 +37,7 @@ export default function Lifestyle() {
                 className="flex-1 text-sm md:text-base lg:text-lg font-light"
                 style={{ color: "var(--color-blue-primary)" }}
               >
-                <span className="font-semibold">Панорамный вид</span> на море из
-                квартиры
+                <span className="font-semibold">Panoramic sea view</span> from the apartment
               </span>
             </div>
             <div className="flex items-center self-stretch bg-[#EBF7FF] py-2.5 md:py-3 lg:py-3.5 px-3.25 md:px-4 lg:px-5 gap-4.5 md:gap-5 lg:gap-6 rounded-md">
@@ -53,8 +52,7 @@ export default function Lifestyle() {
                 className="flex-1 text-sm md:text-base lg:text-lg font-light"
                 style={{ color: "var(--color-blue-primary)" }}
               >
-                <span className="font-semibold">Собственный пляж</span> в шаговой
-                доступности
+                <span className="font-semibold">Private beach</span> within walking distance
               </span>
               <div className="w-8.25 md:w-10 lg:w-12 h-8.25 md:h-10 lg:h-12"></div>
             </div>
@@ -77,9 +75,9 @@ export default function Lifestyle() {
                 className="w-8.25 md:w-10 lg:w-12 h-8.25 md:h-10 lg:h-12 mr-4.5 md:mr-5 lg:mr-6 object-fill"
               />
               <span className="text-sm md:text-base lg:text-lg leading-[100%] text-(--color-blue-primary)">
-                <span className="font-semibold">SPA, бассейны,</span>
+                <span className="font-semibold">SPA, pools,</span>
                 <br />
-                <span className="font-normal">зоны отдыха</span>
+                <span className="font-normal">relaxation areas</span>
               </span>
             </div>
             <div className="flex items-center self-stretch bg-[#EBF7FF] py-2.75 md:py-3 lg:py-3.5 px-3.25 md:px-4 lg:px-5 gap-4.5 md:gap-5 lg:gap-6 rounded-md">
@@ -94,8 +92,8 @@ export default function Lifestyle() {
                 className="flex-1 text-sm md:text-base lg:text-lg font-light"
                 style={{ color: "var(--color-blue-primary)" }}
               >
-                Падел-корт и{" "}
-                <span className="font-semibold">современная инфраструктура</span>
+                Padel court and{" "}
+                <span className="font-semibold">modern infrastructure</span>
               </span>
             </div>
           </div>
@@ -117,9 +115,9 @@ export default function Lifestyle() {
                 className="w-8.25 md:w-10 lg:w-12 h-8.25 md:h-10 lg:h-12 mr-4.5 md:mr-5 lg:mr-6 object-fill"
               />
               <span className="text-sm md:text-base lg:text-lg font-semibold leading-[100%] text-(--color-blue-primary)">
-                Подземный
+                Underground
                 <br />
-                паркинг
+                parking
               </span>
             </div>
             <div className="flex items-center self-stretch bg-[#EBF7FF] text-left py-2.5 md:py-3 lg:py-3.5 px-3.25 md:px-4 lg:px-5 gap-4.5 md:gap-5 lg:gap-6 rounded-md border-0">
@@ -131,18 +129,18 @@ export default function Lifestyle() {
                 className="w-8.25 md:w-10 lg:w-12 h-8.25 md:h-10 lg:h-12 object-fill"
               />
               <span className="flex-1 text-sm md:text-base lg:text-lg font-light text-(--color-blue-primary)">
-                Возможность спроектировать{" "}
-                <span className="font-semibold">квартиру под себя</span>
+                Option to design{" "}
+                <span className="font-semibold">the apartment to your taste</span>
               </span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Планшетна та Десктопна версія */}
+      {/* Tablet & Desktop version */}
       <div className="hidden md:flex flex-col items-center self-stretch bg-[url(/paradiseLifeBG-desktop.webp)] bg-cover bg-center py-16 lg:py-24 xl:py-32 2xl:py-26 px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-16">
         <h2 className="text-white text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[38px] font-semibold text-center mb-10 lg:mb-16 2xl:mb-13 uppercase leading-tight tracking-tight">
-          Райская жизнь у моря круглый год
+          Paradise life by the sea all year round
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 2xl:gap-6 w-full max-w-[1440px] 2xl:max-w-[1440px]">
@@ -161,9 +159,9 @@ export default function Lifestyle() {
               icon="/window.png"
               content={
                 <>
-                  <span className="font-semibold">Панорамный вид</span> на море
+                  <span className="font-semibold">Panoramic sea view</span>
                   <br />
-                  <span>из квартиры</span>
+                  <span>from the apartment</span>
                 </>
               }
             />
@@ -171,9 +169,9 @@ export default function Lifestyle() {
               icon="/bed.png"
               content={
                 <>
-                  <span className="font-semibold">Собственный пляж</span> в
+                  <span className="font-semibold">Private beach</span> within
                   <br />
-                  <span>шаговой доступности</span>
+                  <span>walking distance</span>
                 </>
               }
             />
@@ -194,9 +192,9 @@ export default function Lifestyle() {
               icon="/woman.png"
               content={
                 <>
-                  <span className="font-semibold">SPA, бассейны,</span>
+                  <span className="font-semibold">SPA, pools,</span>
                   <br />
-                  <span>зоны отдыха</span>
+                  <span>relaxation areas</span>
                 </>
               }
             />
@@ -204,9 +202,9 @@ export default function Lifestyle() {
               icon="/building.png"
               content={
                 <>
-                  <span>Падел-корт и</span>
+                  <span>Padel court and</span>
                   <br />
-                  <span className="font-semibold">современная инфраструктура</span>
+                  <span className="font-semibold">modern infrastructure</span>
                 </>
               }
             />
@@ -227,9 +225,9 @@ export default function Lifestyle() {
               icon="/point.png"
               content={
                 <>
-                  <span className="font-semibold">Подземный</span>
+                  <span className="font-semibold">Underground</span>
                   <br />
-                  <span className="font-semibold">паркинг</span>
+                  <span className="font-semibold">parking</span>
                 </>
               }
             />
@@ -237,9 +235,9 @@ export default function Lifestyle() {
               icon="/paper.png"
               content={
                 <>
-                  <span>Возможность спроектировать</span>
+                  <span>Option to design</span>
                   <br />
-                  <span className="font-semibold">квартиру под себя</span>
+                  <span className="font-semibold">the apartment to your taste</span>
                 </>
               }
             />
