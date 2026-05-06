@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 
 const gilroy = localFont({
@@ -68,7 +69,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${gilroy.variable} h-full antialiased`}>
-         <head>
+      <head>
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
