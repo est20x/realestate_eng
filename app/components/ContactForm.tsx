@@ -62,6 +62,10 @@ export default function ContactForm() {
         setName("");
         setPhone("");
         toast.success("Success! Your request has been submitted.");
+         // Fire Facebook Pixel Lead event
+        if (typeof window !== "undefined" && (window as any).fbq) {
+          (window as any).fbq("track", "Lead");
+        }
       } else {
         setSubmitStatus("error");
         toast.error("Submission failed. Please try again.");
